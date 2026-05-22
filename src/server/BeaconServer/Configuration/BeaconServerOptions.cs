@@ -39,6 +39,9 @@ public sealed class BeaconServerOptions
 
     public string SnInstallRoot { get; set; } = @"C:\Beacon\game";
 
+    BuildEnvironment = TargetBuildEnvironment.Unique;
+    bUseLoggingInShipping = true;
+
     /// <summary>
     /// Optional direct path to the Subnautica 2 executable. Leave empty to
     /// auto-detect supported Steam/Epic Win64 and Xbox WinGDK layouts under
